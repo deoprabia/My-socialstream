@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MY-SOCIAL-STREAM </title>
+
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+</head>
+<body>
+    <header>
+
+
+<nav class="top-container-right">
+
+        <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">Posts</a></li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Topics</a>
+                  <div class="dropdown-content">
+                    <a href="#">topic 1</a>
+                    <a href="#">topic 2</a>
+                    <a href="#">topic 3</a>
+                  </div>
+                  <li class="login">
+     
+            
+                        <input type="text" name="firstname" id=""placeholder="firstname">
+                        <input type="text" name="lastname" id=""placeholder="lastname">
+                        <input type="text" name="username" id=""placeholder="username">
+                        <button>LOGIN</button>
+                    </li>
+                </li>
+              </ul>
+</nav>
+
+    </header>
+
+    <main>
+
+            <section>
+                    <ul>  <input  type="text" name="topic" id="top"placeholder="topic/title">
+                        <select name="topic" id="top"> </select>
+                        <input type="text" name="post" id="textarea" placeholder="Your text here">
+                        <button class="newPost-Btn">New Post </button>
+                    </ul>
+                   
+                </section>
+<aside>
+
+        <div class="container">
+                
+                <div id="post">
+                    <h4>
+                        TOPIC: JAVAWORLD
+
+     
+                      </h4>
+                      <p>
+                        USER: WEBDEVELOPER
+                          </p>
+                  <div class="flex">
+                    <div class="vote">
+                      
+                            <button id="upButton" type="button" onclick="upVote()" class="vote">
+    
+                                    <svg class="upArrow" viewBox="0 0 11.5 6.4" xml:space="preserve">
+                                    <path d="M11.4,5.4L6,0C5.9-0.1,5.8-0.1,5.8-0.1c-0.1,0-0.2,0-0.2,0.1
+                                    L0.1,5.4C0,5.6,0,5.7,0.1,5.9l0.4,0.4c0.1,0.1,0.3,0.1,0.4,0l4.8-4.8l4.8,4.8c0.1,0.1,0.3,0.1,0.4,0l0.4-0.4
+                                    C11.5,5.7,11.5,5.6,11.4,5.4z"/>
+                                    </svg>
+                                    
+                                  </button>
+                                  <h1 id="scoreCounter"></h1>
+                                  <button id="downButton" type="button" onclick="downVote()" class="vote">
+                                    
+                                  <svg class="downArrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 11.5 6.4" xml:space="preserve">
+                                    <path d="M0.1,0.9l5.4,5.4c0.1,0.1,0.1,0.1,0.2,0.1c0.1,0,0.2,0,0.2-0.1
+                                    l5.4-5.4c0.1-0.1,0.1-0.3,0-0.4L11,0c-0.1-0.1-0.3-0.1-0.4,0L5.8,4.8L0.9,0C0.8-0.1,0.6-0.1,0.5,0L0.1,0.4C0,0.6,0,0.7,0.1,0.9z"/>
+                                  </svg>
+                                  </button>
+                                </div>
+                                  </div>
+                                  <h4>
+                                      today`s posts 
+                   
+                                    </h4>
+                                    <img src="https://pbs.twimg.com/media/Ds1TuY7XoAAkjTS.jpg:large" alt="" width="280px" height="180px;" class="picture">
+                                    <p>
+                                     What type of error are you running into? Do you understand the error?
+                   
+                                     #Developer #programming #coding #hacking #programmer #DevOps #webdevelopment #appdevelopment #100DaysOfCode #learn #Java #Python #javascript #NodeJS #Angular #reactjs #VueJS #php #Linux #macOS #CodeNewbie
+                                    </p>
+                      </div>
+                      <div class="votes">
+                          
+                      </div>
+                      
+                      </div>
+                    </div>
+                   
+                  
+                  </div>
+                  
+                  <div class="comments flex down">
+                
+                  </div>
+                </div>
+              </div>
+</aside>
+    </main>
+
+  
+    
+
+
+          <footer>
+                <div><a href="https://twitter.com"><img title="Twitter" src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/twitter-48.png" alt="Twitter" width="35" height="35" /></a> <a href="https://www.facebook.com/"><img title="Facebook" src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/facebook-48.png" alt="Facebook" width="35" height="35" /></a> <a href="mailto: @gmail.com"><img title="Email" src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/mail-48.png" alt="Email" width="35" height="35" /></a>
+                    <a href="www.instagram.com"><img title="Instagram" src="https://cdn3.iconfinder.com/data/icons/social-circle/512/social_6-48.png" alt="Instagram" width="35" height="35" /></a></div>
+                       
+               
+        </footer>
+    
+   <script src="js/wiev.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/model.js"></script>
+<script src="js/controller.js"></script>
+</body>
+</html>
